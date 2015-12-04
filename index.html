@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>download jars</title>
+	<style type="text/css">
+		.wrapper {
+			text-align:center;
+			margin-top: 100px;
+		}
+		input[type="text"] {
+			width: 300px;
+			height: 30px;
+			margin-bottom: 15px;
+		}
+		input[type="submit"] {
+			width: 300px;
+			height: 30px;
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<form action="/" method="POST" id="form">
+			<div>
+				<h3>Download jars from maven repos!</h3>
+			</div>
+			<div>
+				<input type="text" name="artifact" placeholder="artifact">
+			</div>
+			<div>
+				<input type="text" name="output" placeholder="output">
+			</div>
+			<div><input type="submit" value="Download!"></div>
+		</form>
+	</div>
+</body>
+</html>
