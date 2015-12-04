@@ -37,7 +37,8 @@ http.createServer(function(req, res) {
 
             for (var i = 0; i < artifacts.length; i++) {       
                 var output = getOutput(body) || 'out/' + artifacts[i].replace(/:/g, '-') + '.jar';
-                child = exec('mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get -Dartifact=' 
+                child = exec('mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get' 
+                    + ' -Dtransitive=false' + ' -Dartifact=' 
                     + artifacts[i]+ ' -Ddest=' + output, outdata);
             }
         });
