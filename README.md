@@ -1,10 +1,12 @@
-# download-jars-from-maven
+# download-jars-from-maven  
 A node web app that can download jars from maven repos.
 
-###Dependencies
+### Dependencies 
+
 JRE, Maven and Node.js are needed.
 
-###Run
+### Run  
+
 * First start the server
 ```bash
 node index
